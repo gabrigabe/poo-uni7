@@ -1,3 +1,5 @@
+package Exercicio1;
+
 class Main 
 {  public static void main(String[] args) {
     Cachorro c1 = new Cachorro(Raca.PE_DURO, "Rex");

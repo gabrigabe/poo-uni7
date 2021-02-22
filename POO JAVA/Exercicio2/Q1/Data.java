@@ -1,7 +1,7 @@
 package Exercicio2.Q1;
 
 class Data {
-    int dia = 01 , mes = 01 , ano = 2021;
+    private  final int dia = 01 , mes = 01 , ano = 2021;
     
     void setData(int dia, int mes, int ano) {
     } 

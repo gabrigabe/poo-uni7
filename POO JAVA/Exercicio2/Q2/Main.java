@@ -3,7 +3,7 @@ package Exercicio2.Q2;
 public class Main {
     private static final int NumeroVoo = 01;
 	public static final int CapacidadedeVoo = 100;
-    public static final int HorarioDoVoo = Voo.HorarioDoVoo;
+    public  final int HorarioDoVoo = Voo.HorarioDoVoo;
     public static final int AcentosDisponiveis = Voo.AcentosDisponiveis;
 
     public int getNumeroVoo() {
@@ -19,7 +19,7 @@ public class Main {
    public int getAcentosDisponiveis(){
        return AcentosDisponiveis;
    }
-   public default int HorarioDoVoo() {
+   public  int HorarioDoVoo(){
        return HorarioDoVoo;
 
    }

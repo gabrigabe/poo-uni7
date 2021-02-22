@@ -1,16 +1,26 @@
 package Exercicio2.Q2;
 
 public class Main {
-    public int getNumeroVoo(){
+    private static final int NumeroVoo = 01;
+	public static final int CapacidadedeVoo = 100;
+    public static final int HorarioDoVoo = Voo.HorarioDoVoo;
+    public static final int AcentosDisponiveis = Voo.AcentosDisponiveis;
+
+    public int getNumeroVoo() {
         return NumeroVoo;
     }
     public static void main(String[] args) {
        Data data = new Data(); 
         data.showData();
     }
-    public final void getCapacidadeVoo() {
-       return CapacidadeVoo;
+    public final int getCapacidadeVoo() {
+       return CapacidadedeVoo;
     }
-}   public int getAcentosDisponiveis(){
+   public int getAcentosDisponiveis(){
        return AcentosDisponiveis;
+   }
+   public default int HorarioDoVoo() {
+       return HorarioDoVoo;
+
+   }
 }

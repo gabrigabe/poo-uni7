@@ -1,3 +1,6 @@
+import Teste1.Funcionario;
+import Teste1.Professor;
+
 public class Main{
 
     public static void realizarPagamento(Funcionario funcionario){}

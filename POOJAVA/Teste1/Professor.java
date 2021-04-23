@@ -1,3 +1,7 @@
+package Teste1;
+
+import Teste1.Funcionario;
+
 public class Professor extends Funcionario {
     private String [] disciplinas;
     public Professor() {}
@@ -15,6 +19,6 @@ funcionario
 ^
 |
 |
-Professor
+Teste1.Professor
 
 */

@@ -10,7 +10,7 @@ public class ContaPoupanca {
 
     public void depositar(double dinheiro) throws DepositoNegativoException {
         if (dinheiro <= 0) {
-            throw new DepositoNegativoException("Uma mensagem bonita pra quem for tratar essa exception");
+            throw new DepositoNegativoException("Você não pode depositar valores negativos!");
         }
         this.saldo += dinheiro;
     }
@@ -21,7 +21,7 @@ public class ContaPoupanca {
         }
 
         if (dinheiro > this.saldo) {
-            throw new SaldoInsuficienteException("Você tem apenas R$ " + this.saldo + " de saldo");
+            throw new SaldoInsuficienteException("Você não tem saldo suficiente");
         }
 
         this.saldo -= dinheiro;

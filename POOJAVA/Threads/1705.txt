@@ -1,0 +1,6 @@
+O Método sleep não é o suficiente por que ele coloca a thread para dormir apenas por um periodo de tempo o que pode
+ocasionar uma thread acordar no meio da execução de outra, o que pode atrapalhar na sincronização das threads, que
+pode ser feito melhor com os metodos wait, notify e notifyall que o wait, deixa a thread em espera ate a mesma ser
+chamada por um metodo notify ou notifyall, com a diferença que o notify acorda somente uma thread que esteja em 
+espera e o notifyall acorda todas as threads que estao em espera, assim sendo esses 3 metodos necessarios para 
+deixar as threads sincronizadas

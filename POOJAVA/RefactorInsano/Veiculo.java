@@ -1,4 +1,5 @@
-public class Veiculo {
+
+public class Veiculo extends VeiculoActions {
 
     private final TipoDeVeiculo tipoDeVeiculo;
     private final Motor motor;
@@ -21,7 +22,9 @@ public class Veiculo {
 
     public Motorista getMotoristaAtual() {
         return motoristaAtual;
-    
     }
-    
+
+    public void dirigir(MotoristaActions motoristaActions) {
+    }
+
 }

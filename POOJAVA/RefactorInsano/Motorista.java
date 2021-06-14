@@ -1,18 +1,23 @@
 import java.time.LocalDate;
 
-public class Motorista implements InterfaceEstadoMotorista{
-    private final String nome;
+public class Motorista extends MotoristaActions{
+    
+    private String nome;
     private LocalDate vencimentoCNH;
-    private Veiculo veiculoAtual;   
+
     public Motorista(String nome, LocalDate vencimentoCNH) {
         this.nome = nome;
         this.vencimentoCNH = vencimentoCNH;
     }
-    public void dirigir(Motorista motorista) {
-        veiculo.dirigir(this);
-        veiculoAtual = veiculo;
+
+    public String getNome() {
+        return nome;
     }
-
-    public void estacionar(){};
-
+    
+    public LocalDate getVencimentoCNH() {
+        return vencimentoCNH;
+    }
+    public void setVencimentoCNH(LocalDate vencimentoCNH) {
+        this.vencimentoCNH = vencimentoCNH;
+    }
 }

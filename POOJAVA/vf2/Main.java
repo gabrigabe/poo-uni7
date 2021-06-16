@@ -12,6 +12,20 @@ public class Main {
             seuZe.renovarCNH();
         }
         seuZe.dirigir(veiculo);
+        try {
+            seuZe.dirigir(veiculo);
+        } catch (InfracaoException e) {
+            System.out.println(e.getMessage());
+            seuZe.renovarCNH();
+        }
+
+        seuZe.dirigir(veiculo);
+        motor.melhorarMotor();
+        seuZe.estacionar();
+
+        Motorista joao = new Motorista("Joao", LocalDate.of(2022, 10, 18));
+        joao.dirigir(veiculo);
+        joao.estacionar();
 
 
 

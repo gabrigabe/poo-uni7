@@ -1,9 +1,9 @@
 
-public class MotoristaActions implements InterfaceMotorista, InterfaceCNH, InterfaceEstacionar{
+public class MotoristaActions implements InterfaceMotorista{
     Veiculo veiculo;
-    VeiculoActions acaoVeiculo;
+    Veiculos veiculos;
     Motorista motorista;
-    public TipoDeVeiculo veiculoAtual;
+    public Veiculos veiculoAtual;
 
     public void renovarCNH() {
         motorista.setVencimentoCNH(motorista.getVencimentoCNH().plusYears(5));
@@ -18,16 +18,8 @@ public class MotoristaActions implements InterfaceMotorista, InterfaceCNH, Inter
     public void estacionar() {
         if (veiculoAtual == null)
             throw new NullPointerException("não tem veiculo pra estacionar pq não estava dirigindo...");
-        acaoVeiculo.estacionar();
+        veiculos.estacionar();
         veiculoAtual = null;
-    }
-
-    public void melhorarMotor() {
-        Motor motor = veiculo.getMotor();
-        int producaoDeCarbono = motor.getProducaoDeCarbono();
-        producaoDeCarbono = producaoDeCarbono - 2;
-        motor.setProducaoDeCarbono(producaoDeCarbono);
-        
     }
     
 }

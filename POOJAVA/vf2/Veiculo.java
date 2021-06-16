@@ -1,19 +1,19 @@
 
-public class Veiculo extends VeiculoActions {
+public class Veiculo {
 
-    private final TipoDeVeiculo tipoDeVeiculo;
+    private final Veiculos veiculos;
     private final Motor motor;
     private Motorista motoristaAtual;
 
-    public Veiculo(TipoDeVeiculo tipoDeVeiculo, Motor motor) {
-        if (tipoDeVeiculo == null)
+    public Veiculo(Veiculos veiculos, Motor motor) {
+        if (veiculos == null)
             throw new NullPointerException("Precisa passar um tipo de veiculo!!");
-        this.tipoDeVeiculo = tipoDeVeiculo;
+        this.veiculos = veiculos;
         this.motor = motor;
     }
 
-    public TipoDeVeiculo getTipoDeVeiculo() {
-        return tipoDeVeiculo;
+    public Veiculos getTipoDeVeiculo() {
+        return veiculos;
     }
 
     public Motor getMotor() {
